@@ -8,14 +8,17 @@ import {
     ChangeCurrentCurrencyAC,
     CurrencyReducersTypes
 } from '../../redux/actions';
-import { useDispatch, useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {selectorsAllState} from "../../redux/selectors";
 
 // const CurrencyEContainer: React.FC<TProps> = props => {
 const CurrencyEContainer: React.FC = () => {
     let bar = null;
     console.log(typeof bar === 'object')
+    let arr = [{title: 'abc'}, {title: 'dfese авпдлоп'}, {title: 'xyz ese'}, {title: 'awer'}, {title: 'yrese'}]
 
+    let a = arr.filter(item => item.title.includes('ese'))
+    console.log(a)
     // const {
     //     currencies,
     //     currentCurrency,
@@ -122,15 +125,15 @@ const CurrencyEContainer: React.FC = () => {
     );
 };
 
-const mapStateToProps = ({currency}: { currency: CurrencyState }): CurrencyState => {
-    return {
-        currencies: currency.currencies,
-        currentCurrency: currency.currentCurrency,
-        isBuying: currency.isBuying,
-        amountOfBYN: currency.amountOfBYN,
-        amountOfCurrency: currency.amountOfCurrency,
-    };
-};
+// const mapStateToProps = ({currency}: { currency: CurrencyState }): CurrencyState => {
+//     return {
+//         currencies: currency.currencies,
+//         currentCurrency: currency.currentCurrency,
+//         isBuying: currency.isBuying,
+//         amountOfBYN: currency.amountOfBYN,
+//         amountOfCurrency: currency.amountOfCurrency,
+//     };
+// };
 
 // const mapDispatchToProps = (dispatch: Dispatch<CurrencyReducersTypes>): any => {
 //     return {

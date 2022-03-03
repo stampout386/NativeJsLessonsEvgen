@@ -15,6 +15,35 @@ console.log('lesson 3');
 // https://jsonplaceholder.typicode.com/posts/1
 // https://habr.com/ru/company/oleg-bunin/blog/417461/?_ga=2.54695343.543933152.1602500664-1040035071.1596811661
 
+// console.log('start')
+// let promise = new Promise((resolve, reject) => {
+//     console.log('Promise start')
+//     setTimeout((res) => {
+//         console.log('SetTimeout start')
+//         if (res.statusCode === 200) {
+//             resolve(res.data)
+//
+//         } else {
+//             reject('ошибочный запрос')
+//
+//         }
+//         console.log('SetTimeout end')
+//     }, 2000, {data: {id: 'dsfhkjh1324', name: 'Mik'}, message: '', statusCode: 200})
+//     console.log('Promise end')
+// })
+// promise
+//     .then((data: any) => {
+//         console.log(data)
+//     })
+//     .then((res => {
+//         console.log(res)
+//     }))
+//     .catch((err) => {
+//         console.warn(err)
+//     })
+//
+// console.log('end')
 
 // just a plug
-export default ()=>{};
+export default () => {
+};
